@@ -1,0 +1,86 @@
+h1 {    // button TEXT
+    font-family: $roboto-font;
+    font-weight: lighter;
+    font-size: $button-font-size;
+    color: white;
+}
+
+h2 {    // main section text 
+    font-family: $roboto-font;
+    font-size: $paragraph-font-size;
+    font-weight: 500;
+    color: $title-color;
+}
+
+h3 {    // account text
+    font-family: $roboto-font;
+    font-weight: lighter;
+    font-size: $account-font-size;
+    color: $account-color;
+    margin: 0px;
+    text-align: center;
+}
+
+h4 {    //sidebar text 
+    font-family: $roboto-font;
+    font-weight: lighter;
+    font-size: $sidebar-font-size;
+    color: $grey-color;
+}
+
+p { // inside text 
+    font-family: $roboto-font;
+    font-weight: 700;
+    font-size: 16px;
+    color: $title-color;
+}
+
+h5 { //Head text`
+    font-family: $roboto-font;
+    font-size: $head-font-size;
+    color: $grey-color;
+    // margin: 18px 45px 0 0;
+    font-weight: lighter;
+    // position: absolute;
+}
+
+.container {
+    width: 1056px;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+}
+
+body {
+    background-color: $background-color;
+    border-bottom: 1px solid $border-color;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    margin: 20px 0 0 205px;
+}
+
+.content-container {
+    width: 700px;
+    margin: auto;
+}
+
+// toggles 
+
+.display-none {
+    display: none;
+}
+
+.sidebar-hidden {
+    transform: translate(-188px, 0px);
+  }
+
+.hamburger-icon-hidden{
+    transform: translate(-150px, 0px);
+}
