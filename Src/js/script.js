@@ -1,6 +1,9 @@
 
 const Btn = document.querySelector('.hamburger-icon');
 
+const SectionElements = document.querySelectorAll('.container');
+
+console.log(SectionElements);
 
 Btn.addEventListener('click', function(){
     
@@ -8,6 +11,9 @@ Btn.addEventListener('click', function(){
 
   Btn.classList.toggle('hamburger-icon-hidden');
 
-  
+  for ( let SectionElement of SectionElements ) {
+    SectionElement.classList.toggle('margin-width');
+  }
+
 });
 

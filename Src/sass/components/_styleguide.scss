@@ -1,41 +1,54 @@
-h1 {    // button TEXT
-    font-family: $roboto-font;
-    font-weight: lighter;
-    font-size: $button-font-size;
-    color: white;
-}
 
-h2 {    // main section text 
+.content-title { 
     font-family: $roboto-font;
     font-size: $paragraph-font-size;
     font-weight: 500;
     color: $title-color;
+    margin-left: 19px;
+    align-self: center;
 }
 
-h3 {    // account text
+.account-text {    // account text
     font-family: $roboto-font;
     font-weight: lighter;
     font-size: $account-font-size;
     color: $account-color;
-    margin: 0px;
     text-align: center;
 }
 
-h4 {    //sidebar text 
+.link-text {
+    font-family: $roboto-font;
+    font-weight: lighter;
+    font-size: $paragraph-font-size;
+    color: $account-color;
+    text-align: center;
+    margin-right: 195px;
+}
+
+.sidebar-links-text {    //sidebar text 
     font-family: $roboto-font;
     font-weight: lighter;
     font-size: $sidebar-font-size;
     color: $grey-color;
 }
 
-p { // inside text 
+.sidebar-subtitle {
+    margin: 0 0 0 18px;
+    font-weight: 400;
+    font-family: $roboto-font;
+    font-weight: lighter;
+    font-size: $sidebar-font-size;
+    color: $grey-color;
+}
+
+ .inside-content-text { 
     font-family: $roboto-font;
     font-weight: 700;
     font-size: 16px;
     color: $title-color;
 }
 
-h5 { //Head text`
+.amount-money-text { 
     font-family: $roboto-font;
     font-size: $head-font-size;
     color: $grey-color;
@@ -45,8 +58,10 @@ h5 { //Head text`
 }
 
 .container {
-    width: 1056px;
+    width: 100%;
+    max-width: 1056px;
     background-color: white;
+    
 }
 
 .row {
@@ -64,6 +79,7 @@ a {
 
 section {
     margin: 20px 0 0 205px;
+    transition: .35s;
 }
 
 .content-container {
@@ -82,5 +98,9 @@ section {
   }
 
 .hamburger-icon-hidden{
-    transform: translate(-150px, 0px);
+    transform: translate(50px, 0px);
+}
+
+.margin-width {
+    margin: 20px 0 0 10px;
 }

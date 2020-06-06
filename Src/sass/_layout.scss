@@ -6,7 +6,7 @@
     background-color: $white-color;
     display: flex;
     flex-direction: row-reverse;
-    
+    position: relative;
 }
 
 .header-box {
@@ -42,7 +42,7 @@
 }
 
 .account-name {
-    margin: 0px 19px 0 0px;
+    margin: 0px 19px 0 0px; 
 }
 
 .wallet {
@@ -64,6 +64,7 @@
     background-color: $sidebar-color;
     height: 100vh;
     transition: .35s;
+   
 }
 
 .logo {
@@ -79,7 +80,7 @@
     color: $hamburger-icon-color;
     margin-left: 42px;
     position: absolute;
-    margin: -60px 0 20px -50px;
+    margin: 20px 0px 0px 150px;
     transition: .35s;
 }
 
@@ -117,15 +118,6 @@
     position: relative;
     height: 39px;
     margin-bottom: 3px;
-
-    // // &.select-end {
-    // //     padding-bottom: 29px;
-    // //     margin-bottom: 24px;
-    // //     opacity: border 0.5;
-    // // }
-    // :hover {
-        
-    // }
 }
 
 .border-hr {
@@ -143,15 +135,12 @@
 
         }
 
-        h4{
+        p{
             color: white;
     }
 }
 
-.sidebar-subtitle {
-    margin: 0 0 0 18px;
-    font-weight: 400;
-}
+
 
 .sidebar-picture {
     position: relative;
@@ -186,55 +175,39 @@
 
 }
 
-.content-title {
-    margin-left: 19px;
-    align-self: center;
-}
-
 .empty {
     height: 110px;
 }
 
-.details-boxes {
-    flex: 50%;
-    flex-direction: column;
-    
-    margin-top:20px;
-    position: relative;
-    &.details-boxes-right {
-     margin-left: 60px;
-    }
-    .details-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 310px;
-
-    }
-}
-
-.details-box:before {
-    position: absolute;
-    content: "";
-    height: 1px;
-    width: 310px;
-    border-radius: 100%;
-    background-color: $border-color;
-    margin: 45px 0 0 0; 
-   
-}
 
 .details {
-    margin-bottom: 60px;
+    margin: 25px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+        flex: 0 0 45%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $border-color;
+        &:nth-child(2n){
+            margin-left: 70px;
+        }
+        &:nth-child(2n + 1){
+            // margin-right: 70px;
+        }
+        p{
+            margin: 20px 0 5px 0;
+        }
+    }
 }
 
 .earings-chart {
     flex-direction: column;
 }
 
-
 .content-subtitle {
     flex: 100%;
+    margin-bottom: 35px;
 }
 
 .button-content {
@@ -245,37 +218,82 @@
 }
 
 .btn {
-    background-color: $background-color; 
+    background-color: $button-color; 
     position: relative;
     border: none;
-    color: black;
+    color: $title-color;
     text-decoration: none;
-    padding: 11px 30px;
-    display: inline-block;
-    font-size: 16px;
+    padding: 11px 20px;
     cursor: pointer;
     border-radius: 7%;
-    &.btn-1 {
-        
+    display: flex;
+    font-weight: lighter;
+    font-size: 17px;
+    align-items: center;
+    &.btn-add-links {
+        padding: 9px 20px;
+        background-color: $orange-color;
+        color: $white-color;
+        margin-top: 23px;
+        font-size: 21px;
+        &.btn::before {
+        display: none;
+        }
+    }
+    &.btn-singups {
+        &.btn::before{
+            background-color: $blue-circle-button-color;
+        }
+    }
+    &.btn-earned {
+        background-color: $white-color;
+        color: $account-color;
+        font-size: 18px;
+        &.btn::before{
+            background-color: $green-circle-button-color;
+        }
     }
   }
 
 
-.btn::after{
+.btn::before{
     content: "";
-    position: absolute;
+    margin-right: 10px;
+    display: inline-block;
     width: 16PX;
     height: 16px;
     background-color: $orange-color;
     border-radius: 16px 16px;
-    margin: 0px 0 0 -70px ;
 }
-
-  .btn-text {
-    margin-left: 10px;
-  }
 
   .diagram {
       margin: 78px 0 0 15px; 
       padding-bottom: 30px;
   }
+
+.link-btn-add {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.links-container {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .link {
+        border-bottom: 1px solid $border-color;
+        flex: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .link-name{
+            margin: 20px 0px 20px 25px;
+        }
+        &:first-child {
+            border-top: 1px solid $border-color;
+            
+        }
+    }
+}
