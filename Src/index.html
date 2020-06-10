@@ -4,7 +4,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
-      
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <title>Page Title</title>
 </head>
@@ -40,7 +40,7 @@
             
         </div>
         <div class="select-sidebar-container">
-            <div class="select">
+            <div class="select general-sidebar">
                 <a href="#">
                     <div class="sidebar-box">
                         <img src="images/icons/general.svg" class="icons inside-select">
@@ -56,7 +56,7 @@
                 </div></a>
             </div>
 
-            <div class="select">
+            <div class="select link-sidebar">
                 <a href="#"><div class="sidebar-box">
                     <img src="images/icons/links.svg" class="icons inside-select">
                     <p class="inside-select sidebar-links-text">Links</p>
@@ -100,13 +100,20 @@
             <a href="#"><p class="manager-name account-text">Nosaczu K.</p></a>
         </div>
     </div>
-    <section class="container content">
+
+    <section class="container content general-container active-section">
         
         <div class="row content-segment">
             <h2 class="content-title">GENERAL STATISTIC</h2>
         </div>
-        <div class="row content-segment">
-            <div class="empty">
+        <div class="row content-segment calendar">
+            <div class="flatpickr-container">
+                <input type="text" id="basicDate" class="flatpick" data-input>
+                <input type="text" id="basicDate" class="flatpick flatpick-right" data-input>
+                <a href="#"><img src="images/icons/calendar.svg" class="icons inside-select"></a>
+            </div>
+            <div class="button-calendar-container">
+                <button class="btn btn-refresh"><img src="images/icons/refresh.svg" class="icons-refresh"></button>
             </div>
         </div>
             <div class="content-container">
@@ -143,9 +150,10 @@
             </div>
         </div>
     </section>
-    <section class="container content">
+
+    <section class="container content link-container active-section">
         <div class="row content-segment">
-            <h2 class="content-title">GENERAL STATISTIC</h2>
+            <h2 class="content-title">LINKS</h2>
         </div>
         <div class="content-container">
             <div class="link-btn-add">
@@ -199,9 +207,11 @@
         </div>
     </section>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+    <script src="js/app.js"  type="module"></script>
 
 </body>
-<script src="js/script.js"></script>  
+
 
 </html>
