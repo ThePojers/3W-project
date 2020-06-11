@@ -22,7 +22,6 @@
     font-size: $paragraph-font-size;
     color: $account-color;
     text-align: center;
-    margin-right: 195px;
 }
 
 .sidebar-links-text {    //sidebar text 
@@ -52,9 +51,8 @@
     font-family: $roboto-font;
     font-size: $head-font-size;
     color: $grey-color;
-    // margin: 18px 45px 0 0;
     font-weight: lighter;
-    // position: absolute;
+
 }
 
 .container {
@@ -78,8 +76,10 @@ a {
 }
 
 section {
-    margin: 20px 0 0 205px;
+    margin: 0 auto;
     transition: .35s;
+    text-align: center;
+
 }
 
 .content-container {
@@ -87,7 +87,14 @@ section {
     margin: auto;
 }
 
+
+
 // toggles 
+
+
+.disable {
+    display: none;
+}
 
 .active-section {
     display: block;
@@ -95,12 +102,16 @@ section {
 
 .sidebar-hidden {
     transform: translate(-188px, 0px);
+    
   }
 
 .hamburger-icon-hidden{
     transform: translate(50px, 0px);
+    
 }
 
 .margin-width {
-    margin: 20px 0 0 10px;
+    margin-left: 10px;
+    
+   
 }

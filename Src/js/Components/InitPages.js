@@ -1,31 +1,43 @@
 
 
-class initPages {
+class InitPages {
   constructor(){
-    this.getElements();
-    this.events();
+    const thisInitPages = this;
+    thisInitPages.getElements();
+    thisInitPages.initEvents();
   }
 
   getElements() {
-
-    this.linksButton = document.querySelector('.link-sidebar');
-    this.generalButton = document.querySelector('.general-sidebar');
-    
+    const thisInitPages = this;
+    thisInitPages.triggerDom = {};
+    thisInitPages.linksButton = document.querySelector('.link-sidebar');
+    thisInitPages.generalButton = document.querySelector('.general-sidebar');
+    thisInitPages.triggerDom.links = document.querySelector('.link-container');
+    thisInitPages.triggerDom.generalStats = document.querySelector('.general-container');
   }
 
-  events() {
-    const links = document.querySelector('.link-container');
-    const generalStats = document.querySelector('.general-container');
+  initEvents() {
+    const thisInitPages = this;
 
-    this.linksButton.addEventListener('click', function(){
-      generalStats.classList.remove('active-section');
-      links.classList.add('active-section');
+    thisInitPages.linksButton.addEventListener('click', function(){
+
+      for(let button in thisInitPages.triggerDom){
+        thisInitPages.triggerDom[button].classList.remove('active-section');
+      }
+      
+      thisInitPages.triggerDom.links.classList.add('active-section');
     });
 
-    this.generalButton.addEventListener('click', function(){
-      generalStats.classList.add('active-section');
+    thisInitPages.generalButton.addEventListener('click', function(){
+
+      for(let button in thisInitPages.triggerDom){
+        thisInitPages.triggerDom[button].classList.remove('active-section');
+      }
+
+      thisInitPages.triggerDom.generalStats.classList.add('active-section');
+      thisInitPages.triggerDom.links.classList.add('active-section');
     });    
   }
 }
 
-export default initPages;
+export default InitPages;
