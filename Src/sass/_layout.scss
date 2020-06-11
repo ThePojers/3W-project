@@ -85,7 +85,6 @@
 .hamburger-icon {
     font-size: 21px;
     color: $hamburger-icon-color;
-    // margin-left: 42px;
     position: absolute;
     margin: 20px 0px 0px 150px;
     left:0;
@@ -182,7 +181,6 @@
     margin-bottom: 20px;
     display: none;
     flex-direction: column;
-    // align-items: center;
     .header-box-sidebar{
     padding: 0 auto;
     height: 60px;
@@ -262,9 +260,6 @@
         border-bottom: 1px solid $border-color;
         &:nth-child(2n){
             margin-left: 70px;
-        }
-        &:nth-child(2n + 1){
-            // margin-right: 70px;
         }
         p{
             margin: 20px 0 5px 0;
