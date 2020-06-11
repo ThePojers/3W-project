@@ -1,7 +1,7 @@
-import DataPicker from './Components/DataPicker.js';
-import Hamburger from './Components/Hamburger.js';
-import InitPages from './Components/InitPages.js';
-import InitChart from './Components/InitChart.js';
+import DataPicker from './Components/dataPicker.js';
+import Hamburger from './Components/hamburger.js';
+import InitPages from './Components/initPages.js';
+import InitChart from './Components/initChart.js';
 
 const app = {
   init: function(){
