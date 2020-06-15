@@ -5,37 +5,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>Page Title</title>
 </head>
 <body>
 
-    
-    <navbar class="head">
-        <a href="#" class="hamburger-icon top "><i class="fas fa-bars"></i></a>
-        <div class="header-box box-small">
-            <a href="#"><img src="images/icons/quit.svg" class="icons" alt="none"></a>
-        </div>
+        <div class="head">
+            <a href="#" class="hamburger-icon top position-fixed"><i class="fas fa-bars"></i></a>
+            <div class="header-box box-small">
+                <a href="#"><img src="images/icons/quit.svg" class="icons" alt="none"></a>
+            </div>
 
-        <div class="header-box box-large">
-            <a href="#"><img src="images/icons/profile.svg" class="icons profile" alt="none"></a>
-            <a href="#"><p class=" account-text account-name">Leonardo Dicaprio</p></a>
-        </div>
+            <div class="header-box box-large">
+                <a href="#"><img src="images/icons/profile.svg" class="icons profile" alt="none"></a>
+                <a href="#"><p class=" account-text account-name">Leonardo Dicaprio</p></a>
+            </div>
 
-        <div class="header-box box-small">
-            <a href="#" class=" notification"><img src="images/icons/notification.svg" class="icons" alt="none"></a>
-        </div>
+            <div class="header-box box-small">
+                <a href="#" class=" notification"><img src="images/icons/notification.svg" class="icons" alt="none"></a>
+            </div>
 
-        <div class="header-box box-large2">
-            <a href="#"><img src="images/icons/wallet.svg" class="icons wallet" alt="none"></a>
-            <a href="#" class="amount"><p class="amount-money-text">$1,500.00</p></a>
-            <a href="#"><img src="images/icons/arrow-down.svg" class="icons arrow-header" alt="none"></a>
+            <div class="header-box box-large2">
+                <a href="#"><img src="images/icons/wallet.svg" class="icons wallet" alt="none"></a>
+                <a href="#" class="amount"><p class="amount-money-text">$1,500.00</p></a>
+                <a href="#"><img src="images/icons/arrow-down.svg" class="icons arrow-header" alt="none"></a>
+            </div>
         </div>
-
-    </navbar>
     
     <div class="sidebar-container">
-        <a href="#" class="hamburger-icon side"><i class="fas fa-bars"></i></a>
         <div class="logo-container">
             <a href="#"><img src="images/logo.svg" class='logo' alt="none"></a>
             
@@ -130,8 +128,8 @@
             </div>
             <div class="row content-segment calendar">
                 <div class="flatpickr-container">
-                    <input type="text" id="basicDate" class="flatpick" data-input>
-                    <input type="text" id="basicDate" class="flatpick flatpick-right" data-input>
+                    <input type="text" class="flatpick basicDate" data-input>
+                    <input type="text" class="flatpick flatpick-right basicDate" data-input>
                     <a href="#"><img src="images/icons/calendar.svg" class="icons inside-select" alt="none"></a>
                 </div>
                 <div class="button-calendar-container">
@@ -161,11 +159,6 @@
                 </div>
                 <div class="row earings-chart">
                     <p class="content-subtitle inside-content-text">Earings chart</p>
-                    <!-- <div class="button-content">
-                        <button class="btn btn-singups">Singups</button>
-                        <button class="btn">FTD</button>
-                        <button class="btn btn-earned">Earned</button>
-                    </div> -->
                 </div>
                 <div class="diagram">
                     <canvas id="myChart"></canvas>

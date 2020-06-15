@@ -91,6 +91,9 @@ section {
 
 // toggles 
 
+.position-fixed{
+    position: fixed;
+}
 
 .disable {
     display: none;
@@ -106,7 +109,7 @@ section {
   }
 
 .hamburger-icon-hidden{
-    transform: translate(50px, 0px);
+    transform: translate(-135px, 0px);
     
 }
 

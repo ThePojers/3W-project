@@ -9,7 +9,7 @@ class DataPicker {
 
   initPlugin(){
 
-    flatpickr('#basicDate', {
+    flatpickr('.basicDate', {
       defaultDate: this.minDate,
     });
     
